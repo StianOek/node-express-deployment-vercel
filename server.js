@@ -6,7 +6,7 @@ app.get("/api/name", (req, res) => {
   res.json({ name: "json", age: "33" });
 });
 
-app.use(express.static("./client/"));
+app.use(express.static("./client"));
 
 const PORT = 5000;
 
