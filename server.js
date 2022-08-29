@@ -1,12 +1,11 @@
 import express from "express";
 
 const app = express();
+app.use(express.static("./client/index.html"));
 
 app.get("/api/name", (req, res) => {
   res.json({ name: "json", age: "33" });
 });
-
-app.use(express.static("./client/index.html"));
 
 const PORT = 5000;
 
