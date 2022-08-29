@@ -1,5 +1,16 @@
 {
   "version": 2,
-  "name": "simple node",
-  "builds": [{ "src": "server.js", "use": "@now/node" }]
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@now/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+
+      "dest": "server.js"
+    }
+  ]
 }
