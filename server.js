@@ -6,7 +6,7 @@ app.get("/api", (req, res) => {
   res.json({ name: "json", age: "33" });
 });
 
-const PORT = 5000;
+const PORT = 4444;
 
 app.listen(PORT, () => {
   console.log(`Server will start on http://localhost:` + PORT);
