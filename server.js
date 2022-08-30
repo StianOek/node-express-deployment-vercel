@@ -3,11 +3,11 @@ import * as path from "path";
 
 const app = express();
 
-app.use(express.static("./client/index.html"));
+app.use(express.static("./client/dist/"));
 
 app.use((req, res, next) => {
   if (req.method === "GET" && !req.path.startsWith("/api")) {
-    return res.sendFile(path.resolve("./client/index.html"));
+    return res.sendFile(path.resolve("./client/dist/index.html"));
   } else {
     next();
   }
