@@ -10,7 +10,7 @@
   "scripts": {
     "start": "node server.js",
     "build": "npm install && npm run build:parcel",
-    "build:parcel": "cd client/src && npm install && parcel build index.html",
+    "build:parcel": "cd client/src && parcel build index.html",
     "dev": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
