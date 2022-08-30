@@ -4,7 +4,7 @@ const App = () => {
   return (
     <div>
       {/*  <h1>Fetch from mongoDBasd</h1> */}
-      <BrowserRouter basename="/">
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<h1>Home</h1>} />
         </Routes>
