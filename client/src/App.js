@@ -6,7 +6,7 @@ const App = () => {
       {/*  <h1>Fetch from mongoDBasd</h1> */}
       <BrowserRouter basename="/">
         <Routes>
-          <Route path="/" element={<h1>Home</h1>} />
+          <Route path="/" element={<h1>Homes</h1>} />
         </Routes>
       </BrowserRouter>
     </div>
